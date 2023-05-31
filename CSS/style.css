@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+	background-image: url("../Images/retro-pinkgif-gif-Favim.com-7836562.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height of the container as needed */
+  }
+
+.container img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.container2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container2 img {
+    width: 5%;
+    height: auto;
+    border: 5px solid black;
+    animation: slide 10s linear infinite alternate;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+        100% {
+    transform: translateX(100%);
+        }
+    }
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .container img {
+        width: 80%; /* Adjust the width percentage as needed for smaller screens */
+    }
+
+    .container2 img {
+        width: 50%; /* Adjust the width percentage as needed for smaller screens */
+    }
+}
